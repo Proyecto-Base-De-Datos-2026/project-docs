@@ -91,6 +91,8 @@ Evidencia de JOIN (> 5 tablas): Consulta avanzada de 7 tablas (medicamento $\rig
 
 
 
+
+
 Integrante 4: [Nombre Integrante 4]
 Evidencia de Función: fn_edad_promedio_especie. Realiza un cálculo estadístico sobre el conjunto de mascotas, utilizando AVG(edad) y aplicando COALESCE para manejar de forma segura los casos donde no existan registros para una especie determinada.
 
