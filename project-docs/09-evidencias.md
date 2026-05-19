@@ -79,7 +79,8 @@ Evidencia de rollback.
 <img width="692" height="207" alt="image" src="https://github.com/user-attachments/assets/b7bd3939-5d2b-45ce-8d21-93ed72feb4ed" />
 
 
-Evidencia de los trigger, procedure, function y JOIN de más de 5 tablas de cada integrante
+
+-Evidencia de los trigger, procedure, function y JOIN de más de 5 tablas de cada integrante
 
 
 
@@ -125,10 +126,47 @@ Evidencia de Procedimiento: pr_actualizar_vacunas. Rutina crítica de negocio qu
 Evidencia de Gatillo (Trigger): tr_bloqueo_borrado_citas. Mecanismo de seguridad (BEFORE DELETE) que intercepta cualquier intento de eliminación de una cita, lanzando un RAISE EXCEPTION para prevenir la pérdida de registros históricos de atención médica.
 
 Evidencia de JOIN (> 5 tablas): Consulta avanzada de 6 tablas que integra el historial médico completo: uniendo mascota, dueno, cita, tratamiento, medicamento y veterinario, permitiendo un análisis consolidado de la trazabilidad del tratamiento prescrito a cada paciente.
+----------------------------------------------------------------------------------------------------------------
+-Problemas encontrados y Soluciones aplicadas
 
 
+Durante el desarrollo, presentamos dificultades para diferenciar el alcance de las herramientas de consola (PowerShell) frente a la interfaz de ejecución de PostgreSQL. Esto nos llevó a ajustar nuestro flujo de trabajo, asegurando primero el acceso al contenedor (docker exec) antes de ejecutar cualquier sentencia DML. Asimismo, tuvimos dudas sobre la correcta trazabilidad de las migraciones, lo cual resolvimos validando la diferencia entre los cambios de estructura (DDL) y la carga de datos volumétricos (DML) mediante los logs de Liquibase.
+
+-----------------------------------------------------------------------------------------
+-Instrucciones de ejecución
 
 
+1. Navegar al directorio del proyecto:
+Abra su terminal y ubíquese en la carpeta donde descargó el proyecto:
 
+cd C:\Users\Asus\Downloads\project-db-liquibase--main\project-db-liquibase--main
+---------------------------------------
+2. Limpieza si ya tiene el contenedor.
 
+docker compose down -v
+------------------------------------
+3.Despliegue del motor de base de datos en segundo plano:
 
+docker compose up -d postgres-db
+---------------------------------
+4. Ejecución automatizada del pipeline de migraciones (DDL/DML):
+
+docker compose run --rm liquibase
+---------------------------------------------
+5. Ahora, para ver lo que hay dentro, entra a la consola de PostgreSQL:
+
+docker-compose exec postgres-db psql -U carlos_admin -d veterinaria_db
+
+La terminal cambiará y mostrará algo como veterinaria_db=#.
+-------------------------------------------------------------------
+6.Comprobar que todo está ahí
+Una vez dentro, escribe este comando para listar tus tablas:
+
+SQL
+\dt
+-----------------------------------------------
+7. Salir
+Cuando termines de revisar, solo escribe:
+
+SQL
+\q
