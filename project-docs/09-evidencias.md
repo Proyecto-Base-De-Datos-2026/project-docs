@@ -9,10 +9,13 @@ DML (Data Manipulation Language): Se aisló la manipulación de datos en scripts
 
 DDL
 
+
 <img width="317" height="312" alt="image" src="https://github.com/user-attachments/assets/c89e3064-f149-4237-942a-d906ff7e1fe9" />
 
 
 DML
+
+
 <img width="312" height="466" alt="image" src="https://github.com/user-attachments/assets/bf35b8c0-fe54-440a-8d52-0818a3c66a8e" />
 
 
