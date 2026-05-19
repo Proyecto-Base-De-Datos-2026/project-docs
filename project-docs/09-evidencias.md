@@ -157,7 +157,6 @@ docker compose run --rm liquibase
 
 docker-compose exec postgres-db psql -U carlos_admin -d veterinaria_db
 
-La terminal cambiará y mostrará algo como veterinaria_db=#.
 -------------------------------------------------------------------
 6.Comprobar que todo está ahí
 Una vez dentro, escribe este comando para listar tus tablas:
