@@ -13,6 +13,7 @@ Funcionales
 
 •	Registrar pagos de consultas 
 
+
 No funcionales
 
 •	La base de datos debe ser segura 
