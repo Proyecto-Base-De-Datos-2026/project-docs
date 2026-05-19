@@ -8,7 +8,9 @@ Funcionales
 •	Registrar pagos de consultas 
 
 No funcionales
+
 •	La base de datos debe ser segura 
+
 •	Debe garantizar integridad de datos 
 •	Debe ser escalable 
 •	Debe funcionar en PostgreSQL
