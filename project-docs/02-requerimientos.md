@@ -1,4 +1,4 @@
-Requerimientos
+-Requerimientos
 
 Funcionales
 
@@ -15,7 +15,7 @@ Funcionales
 •	Registrar pagos de consultas 
 
 
-No funcionales
+-No funcionales
 
 •	La base de datos debe ser segura 
 
