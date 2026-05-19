@@ -1,1 +1,2 @@
-<img width="590" height="344" alt="modelo logico" src="https://github.com/user-attachments/assets/6e23ce29-02f4-450b-8082-0292956c99ba" />
+
+<img width="921" height="532" alt="image" src="https://github.com/user-attachments/assets/465eb6c8-0e56-47de-a0eb-3af1d8ed3f4c" />
