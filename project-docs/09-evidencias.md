@@ -51,6 +51,15 @@ Evidencia de migraciones y carga de datos.
 <img width="464" height="165" alt="image" src="https://github.com/user-attachments/assets/4c9fe096-c161-4137-a711-c0fa6d89d37f" />
 
 
+-Evidencia de Migración:
+
+Descripción: Se ejecutó el pipeline de Liquibase aplicando 31 cambios estructurales (DDL) y de datos (DML) de forma exitosa.
+
+
+-Evidencia de Carga de Datos:
+
+Descripción: Proceso de carga volumétrica finalizado con éxito, insertando 232 registros en las tablas del sistema.
+
 
 
 Evidencia de rollback.
@@ -62,14 +71,6 @@ Evidencia de rollback.
 
 
 
-Evidencia de Migración
-
-Descripción: Se ejecutó el pipeline de Liquibase aplicando 31 cambios estructurales (DDL) y de datos (DML) de forma exitosa.
-
-
-Evidencia de Carga de Datos
-
-Descripción: Proceso de carga volumétrica finalizado con éxito, insertando 232 registros en las tablas del sistema.
 
 
 
