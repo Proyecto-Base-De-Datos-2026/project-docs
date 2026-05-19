@@ -79,12 +79,27 @@ Evidencia de rollback.
 <img width="692" height="207" alt="image" src="https://github.com/user-attachments/assets/b7bd3939-5d2b-45ce-8d21-93ed72feb4ed" />
 
 
+Integrante 1: Carlos Andrés Zuluaga Acuña
+
+Evidencia de Función: fn_total_gastado_dueno. Calcula el monto acumulado invertido por un cliente cruzando pago, cita y mascota. Maneja valores nulos mediante COALESCE.
+
+Evidencia de Procedimiento: pr_cancelar_cita. Actualiza el estado de una fila específica en la tabla cita a 'cancelada' mediante su identificador.
+
+Evidencia de Gatillo (Trigger): tr_alerta_nueva_cita. Monitorea inserciones en cita (AFTER INSERT) y dispara un RAISE NOTICE capturando el ID de la mascota entrante con la variable contextual NEW.
+
+Evidencia de JOIN (> 5 tablas): Consulta avanzada de 7 tablas (medicamento $\rightarrow$ tratamiento_medicamento $\rightarrow$ tratamiento $\rightarrow$ historia_clinica $\rightarrow$ cita $\rightarrow$ mascota $\rightarrow$ dueno). Rastrea qué fármacos consume cada paciente según su raza y propietario.
 
 
 
+Integrante 4: [Nombre Integrante 4]
+Evidencia de Función: fn_edad_promedio_especie. Realiza un cálculo estadístico sobre el conjunto de mascotas, utilizando AVG(edad) y aplicando COALESCE para manejar de forma segura los casos donde no existan registros para una especie determinada.
 
+Evidencia de Procedimiento: pr_actualizar_vacunas. Rutina crítica de negocio que actualiza el estado de inmunización de una mascota, validando la existencia del registro antes de aplicar la modificación.
 
-Evidencias de Lógica Programable por Integrante👤 Integrante 1: Carlos Andrés Zuluaga AcuñaEvidencia de Función: fn_total_gastado_dueno. Calcula el monto acumulado invertido por un cliente cruzando pago, cita y mascota. Maneja valores nulos mediante COALESCE.Evidencia de Procedimiento: pr_cancelar_cita. Actualiza el estado de una fila específica en la tabla cita a 'cancelada' mediante su identificador.Evidencia de Gatillo (Trigger): tr_alerta_nueva_cita. Monitorea inserciones en cita (AFTER INSERT) y dispara un RAISE NOTICE capturando el ID de la mascota entrante con la variable contextual NEW.Evidencia de JOIN (> 5 tablas): Consulta avanzada de 7 tablas (medicamento $\rightarrow$ tratamiento_medicamento $\rightarrow$ tratamiento $\rightarrow$ historia_clinica $\rightarrow$ cita $\rightarrow$ mascota $\rightarrow$ dueno). Rastrea qué fármacos consume cada paciente según su raza y propietario.👤 Integrante 2: [Nombre Integrante 2]Evidencia de Función: fn_contar_citas_mascota. Ejecuta un conteo (COUNT(*)) de las citas que registren el estado explícito de 'completada' para un paciente específico.Evidencia de Procedimiento: pr_registrar_mascota. Encapsula y estandariza la inserción segura de nuevos registros en la tabla mascota.Evidencia de Gatillo (Trigger): tr_validar_edad_mascota. Bloque de seguridad analítica (BEFORE INSERT OR UPDATE) que intercepta la transacción e impide el registro de edades incoherentes (menores a 0 o mayores a 30) mediante un RAISE EXCEPTION.Evidencia de JOIN (> 5 tablas): Consulta avanzada de 6 tablas que unifica pago, cita, mascota, dueno, veterinario e historia_clinica para auditar la relación financiera directa por cada procedimiento médico.👤 Integrante 3: [Nombre Integrante 3]Evidencia de Función: fn_veterinario_mas_activo. Agrupa el volumen de citas del personal médico y a través de un ordenamiento descendente con un límite estricto (LIMIT 1), aísla el nombre del médico con mayor tasa de atención.Evidencia de Procedimiento: pr_actualizar_contacto_dueno. Rutina de mantenimiento de datos que actualiza de manera focalizada la información de contacto de los clientes.Evidencia de Gatillo (Trigger): tr_crear_historial_automatico. Automatización del negocio que reacciona de forma inmediata a la creación de una cita (AFTER INSERT) e inserta una fila paralela en la tabla historia_clinica con diagnóstico en estado "Pendiente".Evidencia de JOIN (> 5 tablas): Consulta avanzada de 7 tablas que cruza el personal médico con tratamientos y facturas para generar un reporte gerencial de rentabilidad operativa.
+Evidencia de Gatillo (Trigger): tr_bloqueo_borrado_citas. Mecanismo de seguridad (BEFORE DELETE) que intercepta cualquier intento de eliminación de una cita, lanzando un RAISE EXCEPTION para prevenir la pérdida de registros históricos de atención médica.
+
+Evidencia de JOIN (> 5 tablas): Consulta avanzada de 6 tablas que integra el historial médico completo: uniendo mascota, dueno, cita, tratamiento, medicamento y veterinario, permitiendo un análisis consolidado de la trazabilidad del tratamiento prescrito a cada paciente.
+
 
 
 
