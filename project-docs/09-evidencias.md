@@ -44,7 +44,7 @@ Corresponden a la carga masiva y transaccional diseñada para simular el comport
 
 
 
-Evidencia de migraciones.
+Evidencia de migraciones y carga de datos.
 
 
 
@@ -62,9 +62,21 @@ Evidencia de rollback.
 
 
 
+Evidencia de Migración
+
+Descripción: Se ejecutó el pipeline de Liquibase aplicando 31 cambios estructurales (DDL) y de datos (DML) de forma exitosa.
+
+
+Evidencia de Carga de Datos
+
+Descripción: Proceso de carga volumétrica finalizado con éxito, insertando 232 registros en las tablas del sistema.
+
 
 
 <img width="692" height="207" alt="image" src="https://github.com/user-attachments/assets/b7bd3939-5d2b-45ce-8d21-93ed72feb4ed" />
+
+
+
 
 
 
