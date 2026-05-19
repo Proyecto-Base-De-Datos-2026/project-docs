@@ -36,8 +36,38 @@ Registros iniciales de administración y configuración del sistema.
 Corresponden a la carga masiva y transaccional diseñada para simular el comportamiento de la veterinaria en un entorno real de alta producción. Se distribuyeron más de 100 registros (distribuidos en 9 archivos SQL secuenciales) que generan una densa red de relaciones entre dueños, mascotas, registros de citas médicas, generación de facturas y seguimientos en historias clínicas.
 
 
-Evidencia de Docker.
+-Evidencia de Docker.
 
 
 
 <img width="986" height="87" alt="image" src="https://github.com/user-attachments/assets/f49c815e-7d7a-4250-833f-47ffdd6570fb" />
+
+
+
+Evidencia de migraciones.
+
+
+
+<img width="464" height="165" alt="image" src="https://github.com/user-attachments/assets/4c9fe096-c161-4137-a711-c0fa6d89d37f" />
+
+
+
+
+Evidencia de rollback.
+
+
+
+
+<img width="694" height="618" alt="image" src="https://github.com/user-attachments/assets/51910e35-430d-40cc-af54-96929e96d12f" />
+
+
+
+
+
+<img width="692" height="207" alt="image" src="https://github.com/user-attachments/assets/b7bd3939-5d2b-45ce-8d21-93ed72feb4ed" />
+
+
+
+
+
+
