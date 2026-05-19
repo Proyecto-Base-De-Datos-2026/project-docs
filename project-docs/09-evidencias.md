@@ -168,5 +168,4 @@ Una vez dentro, escribe este comando para listar tus tablas:
 7. Salir
 Cuando termines de revisar, solo escribe:
 
-SQL
 \q
