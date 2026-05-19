@@ -1,6 +1,7 @@
-. Requerimientos
+Requerimientos
 
 Funcionales
+
 •	Registrar dueños y mascotas 
 
 •	Gestionar citas médicas 
