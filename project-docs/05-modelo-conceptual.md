@@ -1,1 +1,1 @@
-<img width="1518" height="785" alt="modelo conceptual" src="https://github.com/user-attachments/assets/6bc44278-6c30-48a5-9f81-61b170e6d793" />
+<img width="1031" height="531" alt="image" src="https://github.com/user-attachments/assets/35c4799b-f493-4167-89d9-004e50d5ce66" />
