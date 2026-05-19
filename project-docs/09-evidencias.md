@@ -163,7 +163,6 @@ La terminal cambiará y mostrará algo como veterinaria_db=#.
 6.Comprobar que todo está ahí
 Una vez dentro, escribe este comando para listar tus tablas:
 
-SQL
 \dt
 -----------------------------------------------
 7. Salir
